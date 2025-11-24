@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="0; url=assets/CV_Melania_Cano_Arquitecta_Tecnica.pdf">
+    <title>Redirigiendo al CV de Melania Cano</title>
+    <style>
+        body {
+            font-family: Inter, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            text-align: center;
+        }
+        .redirect-message {
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        .spinner {
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #667eea;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 1rem;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        a {
+            color: #667eea;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="redirect-message">
+        <div class="spinner"></div>
+        <h2>Cargando CV...</h2>
+        <p>Redirigiendo al CV de Melania Cano</p>
+        <p><a href="assets/CV_Melania_Cano_Arquitecta_Tecnica.pdf">Si no se abre automáticamente, haz clic aquí</a></p>
+    </div>
+
+    <script>
+        // Fallback redirect after 1 second
+        setTimeout(function() {
+            window.location.href = 'assets/CV_Melania_Cano_Arquitecta_Tecnica.pdf';
+        }, 1000);
+    </script>
+</body>
+</html>
